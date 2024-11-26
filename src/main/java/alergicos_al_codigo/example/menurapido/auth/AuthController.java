@@ -3,11 +3,13 @@ package alergicos_al_codigo.example.menurapido.auth;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 import alergicos_al_codigo.example.menurapido.entities.UserEntity;
 import alergicos_al_codigo.example.menurapido.user.UserService;
 
 @RequestMapping("/api/auth")
+@RestController
 public class AuthController {
     private UserService userService;
 
